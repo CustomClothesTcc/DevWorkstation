@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Para telas menores que 900px */
 @media screen and (max-width: 900px) {
   /* Não alteramos o header */
   header {
@@ -48,7 +49,6 @@
   header nav.menu-aberto {
     display: flex;
   }
-  /* Estilos para as seções */
   main section.inicio {
     display: flex;
     flex-direction: column;
@@ -140,5 +140,95 @@
   }
   main footer.finalDoSite div.copyrightSection {
     padding: 1rem;
+  }
+}
+/* Para telas menores que 650px */
+@media screen and (max-width: 650px) {
+  header .menu-hamburguer {
+    right: 0.5rem;
+  }
+  header nav a {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+  main section.inicio {
+    padding: 5vh 0;
+  }
+  main section.inicio .footerSectionInicio .divImg img {
+    width: 18vw;
+  }
+  main section.devWorkstation article h2 {
+    font-size: 1.3em;
+  }
+  main section.devWorkstation article p {
+    font-size: 1.1em;
+  }
+  main section.devWorkstation img {
+    display: none; /* Mantém a imagem oculta */
+  }
+  main section.areasDesenvolvimento .categorias .categoria h3 {
+    font-size: 1.2rem;
+  }
+  main section.areasDesenvolvimento .categorias .categoria p {
+    font-size: 0.9rem;
+  }
+  main section.sobreNos h2 {
+    font-size: 1.4em;
+  }
+  main section.sobreNos p, main section.sobreNos h3 {
+    font-size: 1.1em;
+  }
+  main section.letreiro marquee i {
+    font-size: 0.8em;
+  }
+  main footer.finalDoSite div.imgSection img {
+    width: 60%; /* Aumenta um pouco a imagem do footer */
+  }
+}
+/* Para telas menores que 350px */
+@media screen and (max-width: 350px) {
+  header .menu-hamburguer {
+    right: 0.3rem;
+  }
+  header .menu-hamburguer span {
+    width: 20px;
+    height: 2px;
+  }
+  header nav a {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+  main section.inicio {
+    padding: 4vh 0;
+  }
+  main section.inicio .footerSectionInicio .divImg img {
+    width: 20vw;
+  }
+  main section.devWorkstation article h2 {
+    font-size: 1.2em;
+  }
+  main section.devWorkstation article p {
+    font-size: 1em;
+  }
+  main section.devWorkstation img {
+    display: none;
+  }
+  main section.areasDesenvolvimento .categorias .categoria h3 {
+    font-size: 1rem;
+  }
+  main section.areasDesenvolvimento .categorias .categoria p {
+    font-size: 0.8rem;
+  }
+  main section.sobreNos h2 {
+    font-size: 1.2em;
+  }
+  main section.sobreNos p, main section.sobreNos h3 {
+    font-size: 1em;
+  }
+  main section.letreiro marquee i {
+    font-size: 0.7em;
+  }
+  main footer.finalDoSite div.imgSection img {
+    width: 70%;
   }
 }/*# sourceMappingURL=responsividade.css.map */

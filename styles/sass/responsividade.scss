@@ -1,5 +1,6 @@
 @import '../padronizacao/variaveis.scss';
 
+/* Para telas menores que 900px */
 @media screen and (max-width: 900px) {
   /* Não alteramos o header */
   header {
@@ -56,7 +57,6 @@
     }
   }
 
-  /* Estilos para as seções */
   main {
     section.inicio {
       display: flex;
@@ -184,6 +184,147 @@
       div.copyrightSection {
         padding: 1rem;
       }
+    }
+  }
+}
+
+/* Para telas menores que 650px */
+@media screen and (max-width: 650px) {
+  header {
+    .menu-hamburguer {
+      right: 0.5rem;
+    }
+
+    nav a {
+      font-size: 1rem;
+      padding: 0.8rem;
+    }
+  }
+
+  main {
+    section.inicio {
+      padding: 5vh 0;
+
+      .footerSectionInicio .divImg img {
+        width: clamp(12vw, 18vw, 25vw);
+      }
+    }
+
+    section.devWorkstation {
+      article {
+        h2 {
+          font-size: clamp(1.1em, 1.3em, 1.6em);
+        }
+
+        p {
+          font-size: clamp(0.9em, 1.1em, 1.3em);
+        }
+      }
+
+      img {
+        display: none; /* Mantém a imagem oculta */
+      }
+    }
+
+    section.areasDesenvolvimento .categorias .categoria {
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+
+    section.sobreNos {
+      h2 {
+        font-size: clamp(1.2em, 1.4em, 1.8em);
+      }
+
+      p, h3 {
+        font-size: clamp(0.9em, 1.1em, 1.3em);
+      }
+    }
+
+    section.letreiro marquee i {
+      font-size: clamp(0.6em, 0.8em, 1em);
+    }
+
+    footer.finalDoSite div.imgSection img {
+      width: 60%; /* Aumenta um pouco a imagem do footer */
+    }
+  }
+}
+
+/* Para telas menores que 350px */
+@media screen and (max-width: 350px) {
+  header {
+    .menu-hamburguer {
+      right: 0.3rem;
+
+      span {
+        width: 20px;
+        height: 2px;
+      }
+    }
+
+    nav a {
+      font-size: 0.9rem;
+      padding: 0.7rem;
+    }
+  }
+
+  main {
+    section.inicio {
+      padding: 4vh 0;
+
+      .footerSectionInicio .divImg img {
+        width: clamp(15vw, 20vw, 25vw);
+      }
+    }
+
+    section.devWorkstation {
+      article {
+        h2 {
+          font-size: clamp(1em, 1.2em, 1.4em);
+        }
+
+        p {
+          font-size: clamp(0.8em, 1em, 1.2em);
+        }
+      }
+
+      img {
+        display: none;
+      }
+    }
+
+    section.areasDesenvolvimento .categorias .categoria {
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+
+    section.sobreNos {
+      h2 {
+        font-size: clamp(1em, 1.2em, 1.5em);
+      }
+
+      p, h3 {
+        font-size: clamp(0.8em, 1em, 1.2em);
+      }
+    }
+
+    section.letreiro marquee i {
+      font-size: clamp(0.5em, 0.7em, 0.9em);
+    }
+
+    footer.finalDoSite div.imgSection img {
+      width: 70%;
     }
   }
 }
