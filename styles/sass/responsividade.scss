@@ -1,0 +1,189 @@
+@import '../padronizacao/variaveis.scss';
+
+@media screen and (max-width: 900px) {
+  /* Não alteramos o header */
+  header {
+    /* Esconde o botão de atendimento */
+    button {
+      display: none;
+    }
+
+    nav {
+      position: relative;
+    }
+
+    /* Ícone de menu hambúrguer */
+    .menu-hamburguer {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+      cursor: pointer;
+      z-index: 2;
+
+      span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: $corDaFontePrincipal;
+        transition: 0.3s;
+      }
+    }
+
+    /* Inicialmente esconde o menu de links */
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: $corFundoBotao;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      text-align: center;
+
+      a {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+      }
+    }
+
+    /* Menu aberto */
+    nav.menu-aberto {
+      display: flex;
+    }
+  }
+
+  /* Estilos para as seções */
+  main {
+    section.inicio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding: 10vh 0;
+
+      .footerSectionInicio {
+        .divSubtituloInicio {
+          h3 {
+            font-size: clamp(1rem, 1.3rem, 1.5rem);
+          }
+        }
+
+        .divImg {
+          flex-direction: column;
+          gap: 2rem;
+
+          img {
+            width: clamp(10vw, 15vw, 20vw);
+          }
+        }
+      }
+    }
+
+    section.devWorkstation {
+      flex-direction: column;
+      text-align: center;
+      margin: 2rem 0;
+
+      article {
+        margin-bottom: 2rem;
+
+        h2 {
+          font-size: clamp(1.2em, 1.5em, 1.8em);
+        }
+
+        p {
+          font-size: clamp(1em, 1.2em, 1.5em);
+        }
+      }
+
+      /* Esconde a imagem do Mapa Mental */
+      img {
+        display: none;
+      }
+    }
+
+    section.areasDesenvolvimento {
+      padding: 1rem;
+
+      .categorias {
+        grid-template-columns: 1fr;
+
+        .categoria {
+          margin-bottom: 1rem;
+
+          i {
+            font-size: 1.8rem;
+          }
+
+          h3 {
+            font-size: 1.3rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    section.sobreNos {
+      padding: 4vh 0;
+      text-align: center;
+
+      h2 {
+        font-size: clamp(1.4em, 1.6em, 2em);
+      }
+
+      p, h3 {
+        font-size: clamp(1em, 1.2em, 1.5em);
+      }
+
+      div {
+        button {
+          padding: clamp(0.5rem, 0.8rem, 1.2rem) clamp(1rem, 1.5rem, 2rem);
+        }
+      }
+    }
+
+    section.letreiro {
+      padding: 2vh 0;
+
+      marquee {
+        i {
+          font-size: clamp(0.7em, 0.9em, 1.2em);
+        }
+      }
+    }
+
+    footer.finalDoSite {
+      div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        /* Esconde o nav do footer */
+        nav {
+          display: none;
+        }
+
+        article, .imgSection {
+          max-width: 100%;
+          margin-bottom: 2rem;
+        }
+
+        div.imgSection img {
+          width: 50%;
+        }
+      }
+
+      div.copyrightSection {
+        padding: 1rem;
+      }
+    }
+  }
+}

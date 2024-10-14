@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@media screen and (max-width: 900px) {
+  /* Não alteramos o header */
+  header {
+    /* Esconde o botão de atendimento */
+    /* Ícone de menu hambúrguer */
+    /* Inicialmente esconde o menu de links */
+    /* Menu aberto */
+  }
+  header button {
+    display: none;
+  }
+  header nav {
+    position: relative;
+  }
+  header .menu-hamburguer {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+  }
+  header .menu-hamburguer span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #f3f3f3;
+    transition: 0.3s;
+  }
+  header nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 1, 0.514);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  header nav a {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+  }
+  header nav.menu-aberto {
+    display: flex;
+  }
+  /* Estilos para as seções */
+  main section.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 10vh 0;
+  }
+  main section.inicio .footerSectionInicio .divSubtituloInicio h3 {
+    font-size: 1.3rem;
+  }
+  main section.inicio .footerSectionInicio .divImg {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main section.inicio .footerSectionInicio .divImg img {
+    width: 15vw;
+  }
+  main section.devWorkstation {
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem 0;
+    /* Esconde a imagem do Mapa Mental */
+  }
+  main section.devWorkstation article {
+    margin-bottom: 2rem;
+  }
+  main section.devWorkstation article h2 {
+    font-size: 1.5em;
+  }
+  main section.devWorkstation article p {
+    font-size: 1.2em;
+  }
+  main section.devWorkstation img {
+    display: none;
+  }
+  main section.areasDesenvolvimento {
+    padding: 1rem;
+  }
+  main section.areasDesenvolvimento .categorias {
+    grid-template-columns: 1fr;
+  }
+  main section.areasDesenvolvimento .categorias .categoria {
+    margin-bottom: 1rem;
+  }
+  main section.areasDesenvolvimento .categorias .categoria i {
+    font-size: 1.8rem;
+  }
+  main section.areasDesenvolvimento .categorias .categoria h3 {
+    font-size: 1.3rem;
+  }
+  main section.areasDesenvolvimento .categorias .categoria p {
+    font-size: 1rem;
+  }
+  main section.sobreNos {
+    padding: 4vh 0;
+    text-align: center;
+  }
+  main section.sobreNos h2 {
+    font-size: 1.6em;
+  }
+  main section.sobreNos p, main section.sobreNos h3 {
+    font-size: 1.2em;
+  }
+  main section.sobreNos div button {
+    padding: 0.8rem 1.5rem;
+  }
+  main section.letreiro {
+    padding: 2vh 0;
+  }
+  main section.letreiro marquee i {
+    font-size: 0.9em;
+  }
+  main footer.finalDoSite div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* Esconde o nav do footer */
+  }
+  main footer.finalDoSite div nav {
+    display: none;
+  }
+  main footer.finalDoSite div article, main footer.finalDoSite div .imgSection {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  main footer.finalDoSite div div.imgSection img {
+    width: 50%;
+  }
+  main footer.finalDoSite div.copyrightSection {
+    padding: 1rem;
+  }
+}/*# sourceMappingURL=responsividade.css.map */
