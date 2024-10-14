@@ -148,54 +148,55 @@ main {
     }
   }
 
-  section.cards {
-    margin-top: clamp(4rem, 7rem, 10rem);
+  section.areasDesenvolvimento {
+    padding: 2rem;
+    background-color: #f4f4f4;
+  
     h2 {
-      font-size: clamp(1.2em, 1.6em, 2em);
-      background: $corBotaoGradiente;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 300;
-      font-family: $fonteFamiliaSecundaria;
-      margin-bottom: clamp(4vh, 5vh, 7vh);
       text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #303;
     }
-    div {
-      display: flex;
-      justify-content: space-between;
-      margin: 0 clamp(0.4em, 0.8em, 1.5em);
-      div {
-        background-image: radial-gradient(
-          circle farthest-corner at 11.3% -0.8%,
-          rgba(153, 14, 241, 1) 0%,
-          rgba(41, 3, 101, 1) 100.2%
-        );
-        border-radius: 30px;
-        width: clamp(8vw, 12vw, 15vw);
-        height: clamp(20vh, 30vh, 35vh);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        img {
-          border-radius: 25px;
-          width: clamp(8vw, 10vw, 12vw);
-          height: clamp(10vh, 15vh, 18vh);
-          background-color: $corDaFontePrincipal;
-          margin-bottom: clamp(1.5vh, 3vh, 4vh);
+  
+    .categorias {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 1rem;
+  
+      .categoria {
+        background-color: #fff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
+  
+        &:hover {
+          transform: translateY(-5px);
         }
-        h6 {
-          font-family: $fonteFamiliaPrimaria;
-          font-size: clamp(1.2em, 1.6em, 2em);
-          font-weight: 700;
-          color: $corDaFontePrincipal;
+  
+        i {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+          color: #007bff; // Cor do ícone
         }
-      }
-      #cardEmbarcados {
-        width: clamp(10vw, 12vw, 15vw);
+  
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+          color: #007bff;
+        }
+  
+        p {
+          font-size: 1rem;
+          color: #666;
+        }
       }
     }
   }
+  
 
   section.sobreNos {
     display: flex;
