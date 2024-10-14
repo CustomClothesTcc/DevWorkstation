@@ -1,27 +1,27 @@
 @charset "UTF-8";
 /* Para telas menores que 900px */
 @media screen and (max-width: 900px) {
-  /* Não alteramos o header */
   header {
-    /* Esconde o botão de atendimento */
-    /* Ícone de menu hambúrguer */
-    /* Inicialmente esconde o menu de links */
+    /* Ajustes gerais para o header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position: fixed;
+    width: 100%;
+    -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 1, 0.514);
+    z-index: 10; /* Mantém o header acima de outros elementos */
+    /* Esconde o nav inicialmente */
     /* Menu aberto */
-  }
-  header button {
-    display: none;
-  }
-  header nav {
-    position: relative;
+    /* Esconde o botão de atendimento */
   }
   header .menu-hamburguer {
     display: block;
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    transform: translateY(-50%);
     cursor: pointer;
-    z-index: 2;
+    z-index: 20;
+    /* Estilo das barras do ícone */
   }
   header .menu-hamburguer span {
     display: block;
@@ -40,15 +40,22 @@
     right: 0;
     width: 100%;
     text-align: center;
+    z-index: 15;
   }
   header nav a {
     padding: 1rem;
+    text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     width: 100%;
+    color: #f3f3f3;
   }
   header nav.menu-aberto {
     display: flex;
   }
+  header button {
+    display: none;
+  }
+  /* Ajustes para o main e demais seções */
   main section.inicio {
     display: flex;
     flex-direction: column;
@@ -182,7 +189,7 @@
     font-size: 0.8em;
   }
   main footer.finalDoSite div.imgSection img {
-    width: 60%; /* Aumenta um pouco a imagem do footer */
+    width: 60%;
   }
 }
 /* Para telas menores que 350px */

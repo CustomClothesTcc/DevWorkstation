@@ -2,27 +2,24 @@
 
 /* Para telas menores que 900px */
 @media screen and (max-width: 900px) {
-  /* Não alteramos o header */
   header {
-    /* Esconde o botão de atendimento */
-    button {
-      display: none;
-    }
+    /* Ajustes gerais para o header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(6px);
+    background-color: $corFundoBotao;
+    z-index: 10; /* Mantém o header acima de outros elementos */
 
-    nav {
-      position: relative;
-    }
-
-    /* Ícone de menu hambúrguer */
     .menu-hamburguer {
       display: block;
-      position: absolute;
-      top: 50%;
-      right: 1rem;
-      transform: translateY(-50%);
       cursor: pointer;
-      z-index: 2;
+      z-index: 20;
 
+      /* Estilo das barras do ícone */
       span {
         display: block;
         width: 25px;
@@ -33,7 +30,7 @@
       }
     }
 
-    /* Inicialmente esconde o menu de links */
+    /* Esconde o nav inicialmente */
     nav {
       display: none;
       flex-direction: column;
@@ -43,11 +40,14 @@
       right: 0;
       width: 100%;
       text-align: center;
+      z-index: 15;
 
       a {
         padding: 1rem;
+        text-decoration: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         width: 100%;
+        color: $corDaFontePrincipal;
       }
     }
 
@@ -55,8 +55,14 @@
     nav.menu-aberto {
       display: flex;
     }
+
+    /* Esconde o botão de atendimento */
+    button {
+      display: none;
+    }
   }
 
+  /* Ajustes para o main e demais seções */
   main {
     section.inicio {
       display: flex;
@@ -251,7 +257,7 @@
     }
 
     footer.finalDoSite div.imgSection img {
-      width: 60%; /* Aumenta um pouco a imagem do footer */
+      width: 60%;
     }
   }
 }
