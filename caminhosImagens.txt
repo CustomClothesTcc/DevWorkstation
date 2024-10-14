@@ -5,3 +5,4 @@ Imagem front-end: <img width="100" height="100" src="https://img.icons8.com/ios-
 Imagem back-end: <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/active-directory.png" alt="active-directory"/>
 
 Imagem banco de dados: <img width="100" height="100" src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/100/external-server-internet-security-vitaliy-gorbachev-fill-vitaly-gorbachev.png" alt="external-server-internet-security-vitaliy-gorbachev-fill-vitaly-gorbachev"/>
+sdvafesdafasdsdfa
