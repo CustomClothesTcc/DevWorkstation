@@ -7,7 +7,7 @@
     padding: 0 1rem;
     position: fixed;
     width: 100vw;
-    height: 15vh;
+    height: 13vh;
     -webkit-backdrop-filter: blur(6px);
             backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 1, 0.514);
@@ -58,24 +58,24 @@
   }
   /* Ajustes para o main e demais seções */
   main section.inicio {
-    background: no-repeat url(../img/fundoMobile.jpg);
-    background-position: center;
+    background: no-repeat url(../img/fundoNotebook.png);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
-    padding: 10vh 0;
+    height: 100vh;
+    position: relative;
   }
   main section.inicio .footerSectionInicio .divSubtituloInicio h3 {
     font-size: 1.3rem;
   }
   main section.inicio .footerSectionInicio .divImg {
-    flex-direction: column;
+    flex-direction: space-between;
     gap: 2rem;
   }
   main section.inicio .footerSectionInicio .divImg img {
-    width: 15vw;
+    width: 6vw;
   }
   main section.devWorkstation {
     flex-direction: column;
@@ -120,7 +120,8 @@
   main section.sobreNos h2 {
     font-size: 1.6em;
   }
-  main section.sobreNos p, main section.sobreNos h3 {
+  main section.sobreNos p,
+  main section.sobreNos h3 {
     font-size: 1.2em;
   }
   main section.sobreNos div button {
@@ -141,7 +142,8 @@
   main footer.finalDoSite div nav {
     display: none;
   }
-  main footer.finalDoSite div article, main footer.finalDoSite div .imgSection {
+  main footer.finalDoSite div article,
+  main footer.finalDoSite div .imgSection {
     max-width: 100%;
     margin-bottom: 2rem;
   }
@@ -185,7 +187,8 @@
   main section.sobreNos h2 {
     font-size: 1.4em;
   }
-  main section.sobreNos p, main section.sobreNos h3 {
+  main section.sobreNos p,
+  main section.sobreNos h3 {
     font-size: 1.1em;
   }
   main section.letreiro marquee i {
@@ -232,7 +235,8 @@
   main section.sobreNos h2 {
     font-size: 1.2em;
   }
-  main section.sobreNos p, main section.sobreNos h3 {
+  main section.sobreNos p,
+  main section.sobreNos h3 {
     font-size: 1em;
   }
   main section.letreiro marquee i {

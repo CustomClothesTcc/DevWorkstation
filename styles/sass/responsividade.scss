@@ -1,4 +1,5 @@
-@import '../padronizacao/variaveis.scss';
+@import "../padronizacao/variaveis.scss";
+
 @media screen and (max-width: 1300px) {
   header {
     display: flex;
@@ -7,7 +8,7 @@
     padding: 0 1rem;
     position: fixed;
     width: 100vw;
-    height: 15vh;
+    height: 13vh;
     backdrop-filter: blur(6px);
     background-color: $corFundoBotao;
     z-index: 10;
@@ -19,7 +20,7 @@
       width: 11vw;
       height: 5vw;
       cursor: pointer;
-      span{
+      span {
         width: 100%;
         height: 3vw;
         background-color: #f3f3f3;
@@ -63,14 +64,14 @@
   /* Ajustes para o main e demais seções */
   main {
     section.inicio {
-      background: no-repeat url(../img/fundoMobile.jpg);
-      background-position: center;
+      background: no-repeat url(../img/fundoNotebook.png);
+      background-size: cover;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: auto;
-      padding: 10vh 0;
+      height: 100vh;
+      position: relative;
 
       .footerSectionInicio {
         .divSubtituloInicio {
@@ -80,11 +81,11 @@
         }
 
         .divImg {
-          flex-direction: column;
+          flex-direction: space-between;
           gap: 2rem;
 
           img {
-            width: clamp(10vw, 15vw, 20vw);
+            width: 6vw;
           }
         }
       }
@@ -145,7 +146,8 @@
         font-size: clamp(1.4em, 1.6em, 2em);
       }
 
-      p, h3 {
+      p,
+      h3 {
         font-size: clamp(1em, 1.2em, 1.5em);
       }
 
@@ -177,7 +179,8 @@
           display: none;
         }
 
-        article, .imgSection {
+        article,
+        .imgSection {
           max-width: 100%;
           margin-bottom: 2rem;
         }
@@ -247,7 +250,8 @@
         font-size: clamp(1.2em, 1.4em, 1.8em);
       }
 
-      p, h3 {
+      p,
+      h3 {
         font-size: clamp(0.9em, 1.1em, 1.3em);
       }
     }
@@ -320,7 +324,8 @@
         font-size: clamp(1em, 1.2em, 1.5em);
       }
 
-      p, h3 {
+      p,
+      h3 {
         font-size: clamp(0.8em, 1em, 1.2em);
       }
     }
@@ -329,7 +334,7 @@
       font-size: clamp(0.5em, 0.7em, 0.9em);
     }
   }
-  footer.finalDoSite{
+  footer.finalDoSite {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
@@ -340,13 +345,10 @@
     .imgSection {
       margin-bottom: 0;
     }
-    
+
     .copyrightSection {
       margin-top: 0;
       text-align: center;
     }
-    
   }
 }
-
-
