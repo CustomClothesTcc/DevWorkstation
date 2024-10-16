@@ -181,10 +181,14 @@
     position: relative;
   }
   main section.inicio div.digitacao div {
-    font-size: 1.3em;
+    font-size: 1.2rem;
+    font-weight: 700;
   }
   main section.inicio .footerSectionInicio .divSubtituloInicio h3 {
-    font-size: 0.9em;
+    font-size: 1em;
+  }
+  main section.inicio .footerSectionInicio div.divImg img {
+    width: 10vw;
   }
   .finalDoSite > div {
     display: flex;
@@ -202,7 +206,7 @@
   article h4 {
     white-space: nowrap;
   }
-  article p {
+  article img, article p {
     display: none;
   }
 }/*# sourceMappingURL=responsividade.css.map */
