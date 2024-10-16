@@ -236,6 +236,57 @@
         }
       }
   }
+  .finalDoSite {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 40px;
+    background-color: #f7f7f7;
   }
+  
+  .finalDoSite > div {
+    grid-column: 1;
+  }
+  
+  article {
+    grid-column: 1;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  article h4 {
+    margin-top: 0;
+  }
+  
+  .imgSection {
+    grid-column: 1;
+    text-align: center;
+  }
+  
+  .imgSection img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .copyrightSection {
+    grid-column: 1;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .copyrightSection a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .copyrightSection a:hover {
+    color: #23527c;
+  }
+  }
+
   
 }
