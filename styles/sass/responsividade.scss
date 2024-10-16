@@ -1,6 +1,6 @@
 @import "../padronizacao/variaveis.scss";
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1100px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -64,8 +64,6 @@
   /* Ajustes para o main e demais seções */
   main {
     section.inicio {
-      background: no-repeat url(../img/fundoNotebook.png);
-      background-size: cover;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -198,157 +196,46 @@
 }
 
 /* Para telas menores que 650px */
-@media screen and (max-width: 750px) {
-  header {
-    .menu-hamburguer {
-      right: 0.5rem;
-    }
-
-    nav a {
-      font-size: 1rem;
-      padding: 0.8rem;
-    }
-  }
-
-  main {
-    section.inicio {
-      padding: 5vh 0;
-
-      .footerSectionInicio .divImg img {
-        width: clamp(12vw, 18vw, 25vw);
+@media screen and (max-width: 550px) {
+  header{
+    width: 100%;
+    div.container{
+      width: 90%;
+      img#logoHeader{
+        width: 14vw;
       }
-    }
-
-    section.devWorkstation {
-      article {
-        h2 {
-          font-size: clamp(1.1em, 1.3em, 1.6em);
-        }
-
-        p {
-          font-size: clamp(0.9em, 1.1em, 1.3em);
+      .menu-hamburguer{
+        span{
+          width: 2vw;
+          height: 4vh;
         }
       }
-
-      img {
-        display: none; /* Mantém a imagem oculta */
-      }
-    }
-
-    section.areasDesenvolvimento .categorias .categoria {
-      h3 {
-        font-size: 1.2rem;
-      }
-
-      p {
-        font-size: 0.9rem;
-      }
-    }
-
-    section.sobreNos {
-      h2 {
-        font-size: clamp(1.2em, 1.4em, 1.8em);
-      }
-
-      p,
-      h3 {
-        font-size: clamp(0.9em, 1.1em, 1.3em);
-      }
-    }
-
-    section.letreiro marquee i {
-      font-size: clamp(0.6em, 0.8em, 1em);
-    }
-
-    footer.finalDoSite div.imgSection img {
-      width: 60%;
     }
   }
-}
-
-/* Para telas menores que 450px */
-@media screen and (max-width: 450px) {
-  header {
-    .menu-hamburguer {
-      right: 0.3rem;
-
-      span {
-        width: 20px;
-        height: 2px;
-      }
-    }
-
-    nav a {
-      font-size: 0.9rem;
-      padding: 0.7rem;
-    }
-  }
-
-  main {
-    section.inicio {
-      padding: 4vh 0;
-
-      .footerSectionInicio .divImg img {
-        width: clamp(15vw, 20vw, 25vw);
-      }
-    }
-
-    section.devWorkstation {
-      article {
-        h2 {
-          font-size: clamp(1em, 1.2em, 1.4em);
-        }
-
-        p {
-          font-size: clamp(0.8em, 1em, 1.2em);
+  main{
+    width: 100%;
+    section.inicio{
+      background: no-repeat url(../img/fundoMobile.png);
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+      div.digitacao{
+        div{
+          font-size: 1.3em;
         }
       }
-
-      img {
-        display: none;
+      .footerSectionInicio{
+        .divSubtituloInicio{
+          h3{
+            font-size: 0.9em;
+          }
+        }
       }
-    }
-
-    section.areasDesenvolvimento .categorias .categoria {
-      h3 {
-        font-size: 1rem;
-      }
-
-      p {
-        font-size: 0.8rem;
-      }
-    }
-
-    section.sobreNos {
-      h2 {
-        font-size: clamp(1em, 1.2em, 1.5em);
-      }
-
-      p,
-      h3 {
-        font-size: clamp(0.8em, 1em, 1.2em);
-      }
-    }
-
-    section.letreiro marquee i {
-      font-size: clamp(0.5em, 0.7em, 0.9em);
-    }
   }
-  footer.finalDoSite {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1em;
-    padding: 0.5em;
-    .finalDoSite > div {
-      grid-column: 1;
-    }
-    .imgSection {
-      margin-bottom: 0;
-    }
-
-    .copyrightSection {
-      margin-top: 0;
-      text-align: center;
-    }
   }
+  
 }

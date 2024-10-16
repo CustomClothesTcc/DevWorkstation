@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1100px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -58,8 +58,6 @@
   }
   /* Ajustes para o main e demais seções */
   main section.inicio {
-    background: no-repeat url(../img/fundoNotebook.png);
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,107 +153,37 @@
   }
 }
 /* Para telas menores que 650px */
-@media screen and (max-width: 750px) {
-  header .menu-hamburguer {
-    right: 0.5rem;
+@media screen and (max-width: 550px) {
+  header {
+    width: 100%;
   }
-  header nav a {
-    font-size: 1rem;
-    padding: 0.8rem;
+  header div.container {
+    width: 90%;
+  }
+  header div.container img#logoHeader {
+    width: 14vw;
+  }
+  header div.container .menu-hamburguer span {
+    width: 2vw;
+    height: 4vh;
+  }
+  main {
+    width: 100%;
   }
   main section.inicio {
-    padding: 5vh 0;
+    background: no-repeat url(../img/fundoMobile.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
   }
-  main section.inicio .footerSectionInicio .divImg img {
-    width: 18vw;
-  }
-  main section.devWorkstation article h2 {
+  main section.inicio div.digitacao div {
     font-size: 1.3em;
   }
-  main section.devWorkstation article p {
-    font-size: 1.1em;
-  }
-  main section.devWorkstation img {
-    display: none; /* Mantém a imagem oculta */
-  }
-  main section.areasDesenvolvimento .categorias .categoria h3 {
-    font-size: 1.2rem;
-  }
-  main section.areasDesenvolvimento .categorias .categoria p {
-    font-size: 0.9rem;
-  }
-  main section.sobreNos h2 {
-    font-size: 1.4em;
-  }
-  main section.sobreNos p,
-  main section.sobreNos h3 {
-    font-size: 1.1em;
-  }
-  main section.letreiro marquee i {
-    font-size: 0.8em;
-  }
-  main footer.finalDoSite div.imgSection img {
-    width: 60%;
-  }
-}
-/* Para telas menores que 450px */
-@media screen and (max-width: 450px) {
-  header .menu-hamburguer {
-    right: 0.3rem;
-  }
-  header .menu-hamburguer span {
-    width: 20px;
-    height: 2px;
-  }
-  header nav a {
-    font-size: 0.9rem;
-    padding: 0.7rem;
-  }
-  main section.inicio {
-    padding: 4vh 0;
-  }
-  main section.inicio .footerSectionInicio .divImg img {
-    width: 20vw;
-  }
-  main section.devWorkstation article h2 {
-    font-size: 1.2em;
-  }
-  main section.devWorkstation article p {
-    font-size: 1em;
-  }
-  main section.devWorkstation img {
-    display: none;
-  }
-  main section.areasDesenvolvimento .categorias .categoria h3 {
-    font-size: 1rem;
-  }
-  main section.areasDesenvolvimento .categorias .categoria p {
-    font-size: 0.8rem;
-  }
-  main section.sobreNos h2 {
-    font-size: 1.2em;
-  }
-  main section.sobreNos p,
-  main section.sobreNos h3 {
-    font-size: 1em;
-  }
-  main section.letreiro marquee i {
-    font-size: 0.7em;
-  }
-  footer.finalDoSite {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1em;
-    padding: 0.5em;
-  }
-  footer.finalDoSite .finalDoSite > div {
-    grid-column: 1;
-  }
-  footer.finalDoSite .imgSection {
-    margin-bottom: 0;
-  }
-  footer.finalDoSite .copyrightSection {
-    margin-top: 0;
-    text-align: center;
+  main section.inicio .footerSectionInicio .divSubtituloInicio h3 {
+    font-size: 0.9em;
   }
 }/*# sourceMappingURL=responsividade.css.map */
