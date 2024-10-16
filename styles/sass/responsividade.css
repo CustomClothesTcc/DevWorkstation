@@ -186,4 +186,23 @@
   main section.inicio .footerSectionInicio .divSubtituloInicio h3 {
     font-size: 0.9em;
   }
+  .finalDoSite > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .imgSection {
+    order: 1;
+    width: 90vw;
+  }
+  article {
+    display: flex;
+    justify-content: center;
+    order: 2;
+  }
+  article h4 {
+    white-space: nowrap;
+  }
+  article p {
+    display: none;
+  }
 }/*# sourceMappingURL=responsividade.css.map */
